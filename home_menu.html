@@ -1,0 +1,154 @@
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+   font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+  /*background-image:url(images/wedding-ceremony-at-beautiful-farm-fg-trade.jpg); */
+  background-image:url(images/img9.jpeg);
+}
+nav .logo{
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 15px;
+  font-style:arial;
+}
+nav{
+  height: 70px;
+  background: #D73D6C;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 19px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #D73D6C;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #000000;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #000000;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 170px;
+  display: list-item;
+  position: relative;
+  border: 0px solid #000000;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -90px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+section{
+  background: url(bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Dropdown Menu Bar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <nav>
+         <label class="logo">The Great Beginning</label>
+         <ul>
+            <li><a class="active" href="slider.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="magic.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Our Magic</a></li> 
+             <li>
+               <a href="booking.php"><i class="fa fa-book "></i>Services
+               <i class="fa fa-caret-down" aria-hidden="true"></i>
+               </a>
+               <ul>
+                  <li><a href="wedding_images.php">Wedding<i class="fa fa-caret-right" aria-hidden="true"></i>
+                     </a>
+                     <ul>
+                        		<li><a href="haldi_gallery.php">Haldi</a></li>
+                        		<li><a href="mehandi_gallery.php">Mehandi</a></li>
+                       			 <li><a href="sangeet_gallery.php">Sangeet</a></li>
+								<li><a href="reception_gallery.php">Reception</a></li>
+                     </ul>
+                  </li>
+				
+                  <li>
+                     <a href="#">Party
+                     <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                     <ul>
+					 	 <li><a href="buisness_gallery.php">Buisness</a></li>
+                        <li><a href="birthday_gallery.php">Birthday</a></li>
+                        <li><a href="cocktail_gallery.php">Cocktail</a></li>
+                        <li><a href="poolparty_images.php">Pool Party</a></li>
+						<li><a href="newyear_gallery.php">New Year</a></li>
+						<li><a href="christmas_gallery.php">Christmas</a></li>
+                     </ul>
+					 <li><a href="engagement_gallery.php">Engagement</a></li>
+					 <li><a href="babyshower.php">Baby Shower</a></li>
+           <li><a href="Designing.php">Designing</a></li>
+           <li><a href="logistic.php">Logistics</a></li>
+
+             <li><a href="#">Festivals<i class="fa fa-caret-right" aria-hidden="true"></i>
+                     </a>
+                     <ul>
+                        <li><a href="holi_gallery.php">Holi</a></li>
+                        <li><a href="navratri_gallery.php">Navratri</a></li>
+                        <li><a href="diwali_gallery.php">Diwali</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               
+            </li>
+        
+			<li><a href="gallery3.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Gallery</a></li>
+		
+			<li><a href="contact_us.php"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact Us</a></li>
+			<li><a href="aboutus.php"><i class="fa fa-address-card"></i>About Us</a></li>
+         </ul>
+      </nav>
+      <section></section>
+   </body>
+</html>
